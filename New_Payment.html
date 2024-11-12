@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="New_Home.css" rel="stylesheet">
+    <link href="New_Payment.css" rel="stylesheet">
+    <script src="New_LoadHTML.js"></script>
+    <script src="New_Payment.js"></script>
+    <link rel="icon" type="image/x-icon" href="/Green Leaf icon.ico">
+    <style>
+        a:hover {
+            background-color: salmon;
+        }
+    </style>
+    <title>Green Leaf - Payment</title>
+</head>
+
+<body>
+    <header></header>
+    <!-- Nav Bar -->
+    <div id="navbar" class="sticky-top"></div>
+    <script>LoadHTML('New_NavBar.html', 'navbar')</script>
+    <!-- End of Nav Bar -->
+    <main>
+        <section>
+            <div class="py-5 text-center">
+                <h1>Check Out</h1>
+            </div>
+            <form class="needs-validation" novalidate>
+                <h4 class="mb-3">Payment Information</h4>
+                <div class="row g-3">
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="text" class="form-control" id="payerFirstName" placeholder="">
+                        <label for="payerFirstName">First Name</label>
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="text" class="form-control" id="payerLastName" placeholder="">
+                        <label for="payerLastName">Last Name</label>
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="text" class="form-control" id="payerAddressLine1" placeholder="">
+                        <label for="payerAddressLine1">Address Line 1</label>
+                        <div class="invalid-feedback">
+                            Please enter your billing address.
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="text" class="form-control" id="payerAddressLine2" placeholder="">
+                        <label for="payerAddressLine2">Address Line 2 <span
+                                class="text-body-secondary">(Optional)</span></label>
+                    </div>
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <select class="form-select" id="payerCountryName" aria-label="Floating label select example">
+                            <option selected>Choose...</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Macao">Macao</option>
+                        </select>
+                        <label for="payerCountryName">Country</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="email" class="form-control" id="payerEmailAddress" placeholder="">
+                        <label for="payerEmailAddress">Email Address <span
+                                class="text-body-secondary">(Optional)</span></label>
+                    </div>
+
+                </div>
+
+                <hr class="my-4">
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="payerSameAddress">
+                    <label class="form-check-label" for="payerSameAddress">Shipping address is the same as my billing
+                        address</label>
+                </div>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="payerSaveInformation">
+                    <label class="form-check-label" for="payerSaveInformation">Save this information for next
+                        time</label>
+                </div>
+
+                <hr class="my-4">
+
+                <h4 class="mb-3">Payment</h4>
+
+                <div class="row gy-3">
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="text" class="form-control" id="payerCreditCardName" placeholder="">
+                        <label for="payerCreditCardName">Full name as displayed on card</label>
+                        <div class="invalid-feedback">
+                            Name on card is required
+                        </div>
+                    </div>
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="tel" class="form-control" id="payerCreditCardNumber" inputmode="numeric" pattern="[0-9\s]{13,19}" placeholder="1111-2222-3333-4444" >
+                        <label for="payerCreditCardNumber">Enter 16 digits credit card number</label>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-md-6 col-sm-6">
+                        <label for="payerExpirationDate" class="form-label">Expiration</label>
+                        <input type="month" class="form-control" id="payerExpirationDate" required>
+                        <div class="invalid-feedback">
+                            Expiration date required
+                        </div>
+                    </div> -->
+
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="month" class="form-control" id="payerExpirationDate" required>
+                        <label for="payerExpirationDate">Expiration</label>
+                        <!-- <div class="invalid-feedback">
+                            Security Code is required
+                        </div> -->
+                    </div>
+
+                    <!-- <div class="col-md-6 col-sm-6">
+                        <label for="payerSecurityCode" class="form-label">CVV</label>
+                        <input type="text" class="form-control" id="payerSecurityCode" placeholder=""
+                            required>
+                        <div class="invalid-feedback">
+                            Security code required
+                        </div>
+                    </div> -->
+
+                    
+                    <div class="form-floating mb-3 col-sm-6">
+                        <input type="tel" class="form-control" id="payerSecurityCode" inputmode="numeric">
+                        <label for="payerSecurityCode">Enter 3 digits security code</label>
+                        <div class="invalid-feedback">
+                            Security Code is required
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+                <div class="divButton">
+                    <button type="button" class="btn btn-success btn-lg" onclick="location.href='New_Delivery.html'">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                        </svg>Delivery</button>
+                    <button type="button" class="btn btn-success btn-lg"
+                        onclick="collectPaymentInformation()">Save</button>
+                    <button class="btn btn-success btn-lg" type="button"
+                        onclick="moveToConfirm()">Confirm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                            </path>
+                        </svg></button>
+                </div>
+
+            </form>
+        </section>
+        <script>reloadPaymentInformation()</script>
+    </main>
+    <!-- <div class="footer">
+        <p class="font-weight-bold"><a href="#top"> <b>Back to top </b></a></p>
+        <p>2024 Copyright: Group Project - Class no: 03 08 11 21 </p>
+    </div> -->
+</body>
+
+</html>

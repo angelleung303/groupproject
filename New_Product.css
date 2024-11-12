@@ -1,0 +1,180 @@
+h1 {
+    text-align: center;
+}
+
+.card-img-top {
+    max-width: 200px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gridcontainer {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    /* max-width: 1440px; */
+}
+
+.img-photo {
+    max-height: 200px;
+    width: auto;
+}
+
+#cart {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 481px) {
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 961px) {
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1441px) {
+    .gridcontainer {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+.fiction {
+    background-image: url(image/fictionbg.jpg);
+}
+
+.nonfiction {
+    background-image: url(image/nonfictionbg.jpg);
+}
+
+.children {
+    background-image: url(image/childrenbg.jpg);
+}
+
+.history {
+    background-image: url(image/historybg.jpg);
+}
+
+.fictiontitle {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    color: black;
+    background-color: rgba(255, 185, 185, 0.7);
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nonfictiontitle {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    color: black;
+    background-color: rgba(255, 185, 185, 0.7);
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.childrentitle {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    color: black;
+    background-color: rgba(255, 185, 185, 0.7);
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.historytitle {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    color: black;
+    background-color: rgba(255, 185, 185, 0.7);
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 80%;
+    height: auto;
+    background-color: #b9832086;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 15% auto 10%;
+    column-gap: 20px;
+}
+
+.bookdescription {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 30;
+    font-style: normal;
+    margin-top: 10px;
+}
+
+.bookdescriptiontitle {
+    font-family: "Faculty Glyphic", sans-serif;
+    font-weight: 40;
+    font-style: normal;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.gototop {
+    font-family: "Faculty Glyphic", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    margin: top 50%;
+}

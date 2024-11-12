@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="New_Home.css" rel="stylesheet">
+    <script src="New_LoadHTML.js"></script>
+    <link rel="icon" type="image/x-icon" href="/Green Leaf icon.ico">
+    <style>
+    a:hover { background-color: salmon;}
+    </style>
+    <title>Green Leaf Book Store-About Us</title>
+</head>
+
+<body>
+    <header></header>
+    <!-- Nav Bar -->
+    <div id="navbar" class="sticky-top"></div>
+    <script>LoadHTML('New_NavBar.html', 'navbar')</script>
+    <!-- End of Nav Bar -->
+    
+    <style>
+        /* ... existing styles ... */
+    
+        .split-container {
+            display: flex;
+            gap: 40px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .main-content {
+            flex: 2;  /* Takes up 2/3 of the space */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+    
+        .contact-info {
+            flex: 1;  /* Takes up 1/3 of the space */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+    
+        .info-block {
+            margin-bottom: 20px;
+        }
+    
+        .info-block h4 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+    
+        .main-content h2 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+    
+        .main-content h3 {
+            color: #45a049;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+    
+        .main-content ul {
+            padding-left: 20px;
+        }
+    
+        .main-content li {
+            margin-bottom: 8px;
+        }
+    
+        /* Make it responsive for smaller screens */
+        @media (max-width: 768px) {
+            .split-container {
+                flex-direction: column;
+            }
+            
+            .main-content,
+            .contact-info {
+                width: 100%;
+            }
+        }
+    </style>
+    
+ 
+    
+    <main>
+
+        <div class="split-container">
+            <!-- Left container (2/3) -->
+            <div class="main-content">
+                <h2>About Us</h2>
+                <p>Welcome to Green Leaf Book Store! At the core of our online bookstore is the belief that knowledge should be accessible to everyone. We are committed to providing a platform where readers can discover, purchase, and engage with a wide range of books from around the world. Our mission is to promote literacy, education, and the love of reading by connecting authors with their audience.</p>
+                
+                <h3>Our Vision</h3>
+                <p>Our vision is to become the go-to online bookstore for readers around the world. We aim to create a community of book lovers who can connect with each other, share their favorite reads, and discover new authors and titles. We envision a world where reading is a fundamental part of daily life, and where everyone has access to the knowledge and stories that inspire and empower them.</p>
+                
+                
+            </div>
+        
+            <!-- Right container (1/3) -->
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="info-block">
+                    <h4>Address</h4>
+                    <p>123 Book Street<br>
+                       13/F Heaven Building<br>
+                       Tsim Sha Tsui<br>
+                       Hong Kong</p>
+                </div>
+        
+                <div class="info-block">
+                    <h4>Business Hours</h4>
+                    <p>Monday - Friday: 9:00 AM - 6:00 PM<br>
+                       Saturday: 10:00 AM - 4:00 PM<br>
+                       Sunday: Closed</p>
+                </div>
+        
+                <div class="info-block">
+                    <h4>Contact Details</h4>
+                    <p>Phone: (852) 123-456-789<br>
+                       Email: info@greenleafbookstore.com</p>
+                </div>
+            </div>
+        </div>
+    
+
+    </main>
+    <div class="footer">
+        <p class="font-weight-bold"><a href="#top"> <b>Back to top </b></a></p>
+        <p>2024 Copyright: Group Project - Class no: 03 08 11 21 </p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="New_Home.css" rel="stylesheet">
+    <script src="New_LoadHTML.js"></script>
+    <title>Green Leaf Book Store-FAQ</title>
+    <link rel="icon" type="image/x-icon" href="/Green Leaf icon.ico">
+    <style>a:hover { background-color: salmon;}
+
+.flip-box {
+  background-color: transparent;
+  width: 100%;
+  height: 300px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+  padding: 3%;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #19885d;
+  color: white;
+}
+
+.flip-box-back {
+  background-color: salmon;
+  color: black;
+  transform: rotateY(180deg);
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+
+    </style>
+</head>
+
+<body>
+    <header><a id="top"></a></header>
+    <!-- Nav Bar -->
+    <div id="navbar" class="sticky-top"></div>
+    <script>LoadHTML('New_NavBar.html', 'navbar')</script>
+    <!-- End of Nav Bar -->
+    <main>
+
+<div ><br><h1 style="text-align: center; font-size: 300%;"><u>FAQ</h1></u></div>   
+<div class=flex-container style="padding: 2%;">
+       
+<!-- Question 1  -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>What payment methods do you accept online?</h3>
+</div>
+<div class="flip-box-back">
+<h4><br>We accept Visa, Master Card, Shop Pay, Paypal and AMEX.</h4>
+ </div>
+</div>
+</div>
+
+<!-- Question 2 -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>Do you do delivery?</h3>
+</div>
+<div class="flip-box-back">
+<h4>Yes, we do!<br>
+    <br>Hong Kong:
+    <br>Free delivery for orders from 500HKD.
+    <br>For orders under 500HKD, delivery fee starts at 34HKD.
+    <br>Usually, orders arrive in under 4 business days.</h4>
+</div>
+</div>
+</div>
+
+<!-- Question 3 -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>Can we meet as MTR stations or other locations to get the books?</h3>
+</div>
+<div class="flip-box-back">
+<h4><br>Sorry that we are unable to meet you in other locations such as MTR stations or at the car park etc.
+<br>We only provide the book-delivery service of "pick up at store" or "ship by courier".
+<br>Thank you for your kind understanding. </h4>
+</div>
+</div>
+</div>
+
+<!-- Question 4 -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>Can I place order via Whatsapp?</h3>
+</div>
+<div class="flip-box-back">
+<h4><br>Customers are required to place order directly on Green Leaf Online Books Store <br>to ensure the accuracy of the order information and inventory management.</h4>
+</div>
+</div>
+</div>
+
+<!-- Question 5 -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>How do I order a book that you don't have stock/don't carry?</h3>
+</div>
+<div class="flip-box-back">
+<h4><br>Please contact us to ask about specific orders. We'll be happy to help.</h4>
+</div>
+</div>
+</div>          
+<!-- Question 6 -->       
+<div class="flip-box">
+<div class="flip-box-inner">
+<div class="flip-box-front">
+<h3><br>How long do special book orders take to arrive?</h3>
+</div>
+<div class="flip-box-back">
+<h4><br>Around 4-6 weeks</h4>
+</div>
+</div>
+</div>                
+            
+</div>
+    </main>
+    <div class="footer">
+        <p class="font-weight-bold"><a href="#top"> <b>Back to top </b></a></p>
+        <p>2024 Copyright: Group Project - Class no: 03 08 11 21 </p>
+    </div>
+</body>
+
+</html>

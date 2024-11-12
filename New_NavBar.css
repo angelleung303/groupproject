@@ -1,0 +1,8 @@
+.navbar-custom{
+    background-color: #008000;
+}
+
+.nav-item, .dropdown-item{
+    text-align: center;
+    vertical-align: middle;
+}

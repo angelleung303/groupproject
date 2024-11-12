@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="/Green Leaf icon.ico">
+    <link href="New_Home.css" rel="stylesheet">
+    <link href="New_Delivery.css" rel="stylesheet">
+    <script src="New_LoadHTML.js"></script>
+    <script src="New_Delivery.js"></script>
+    <title>Green Leaf - Delivery</title>
+</head>
+
+<body>
+    <header></header>
+    <!-- Nav Bar -->
+    <div id="navbar" class="sticky-top"></div>
+    <script>LoadHTML('New_NavBar.html', 'navbar')</script>
+    <!-- End of Nav Bar -->
+    <main>
+        <section>
+            <div class="py-5 text-center">
+                <h1>Checkout</h1>
+            </div>
+
+            <form>
+                <!-- <fieldset style="width:fit-content"></fieldset> -->
+                <fieldset>
+                    <h4 class="mb-3">Delivery Information</h4>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="deliveryOption" id="pickup">
+                        <label class="form-check-label" for="pickup">
+                            Pick up at store
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="deliveryOption" id="mail">
+                        <label class="form-check-label" for="mail">
+                            Mail
+                        </label>
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Please enter address"
+                            id="deliveryAddress"></textarea>
+                        <label for="deliveryAddress">Address</label>
+                    </div>
+                    <p>In order to deliver smoothly, please fill the complete address.
+                        <br>
+                        You may check with <a
+                            href="https://webapp.hongkongpost.hk/correct_addressing/index.jsp?lang=en_US"
+                            target="_blank">Mailing Address Format Finder</a> by the Hong Kong Post
+                    </p>
+                    <hr class="my-4">
+                    <div class="divButton">
+                        <button type="button" class="btn btn-success btn-lg" onclick="location.href='New_Contact.html'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-left" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8" />
+                            </svg>Contact</button>
+                        <button type="button" class="btn btn-success btn-lg"
+                            onclick="collectDeliveryInformation()">Save</button>
+                        <button type="button" class="btn btn-success btn-lg"
+                            onclick="moveToPayment()">Payment
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8">
+                                </path>
+                            </svg></button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+        <script>reloadDeliveryInformation()</script>
+    </main>
+    <!-- <div class="footer">
+        <p class="font-weight-bold"><a href="#top"> <b>Back to top </b></a></p>
+        <p>2024 Copyright: Group Project - Class no: 03 08 11 21 </p>
+    </div> -->
+</body>
+
+</html>
